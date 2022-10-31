@@ -9,7 +9,7 @@ const Food = () => {
         let searchText = e.target.value
         setFood(searchText);
     }
-    let [meal, setMeal] = useState([])
+    let [meal, setMeal] = useState([]);
     useEffect(()=>{
         let url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${food}`
         fetch(url)
@@ -37,7 +37,10 @@ const Food = () => {
             <div className="result-div">
             <h2>Total Food Found : {meal.length} </h2>
                 {                   
-                   meal.map(index=><Meals></Meals>)
+                   meal.map(index=><Meals
+                    index = {index}
+                    key = {index.idMeal}
+                   ></Meals>)
                 }
             </div>
         </div>
