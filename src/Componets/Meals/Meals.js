@@ -11,9 +11,10 @@ const Meals = (props) => {
         navigate(url);
     }
     return (
-        <div onClick={()=>singleFood(idMeal)} className="meal-card">
+        <div onClick={()=>singleFood(idMeal)} className="meal-card h-100">
             <img src={strMealThumb} alt=""/>
             <h3>Name : {strMeal}</h3>
+            <a href={"/food/"+idMeal}>Show Details</a>
         </div>
     );
 };

@@ -39,11 +39,13 @@ const Food = () => {
             <div className="row">                
             {               
                             meal.map(index=>
-                            <div className="col-lg-4 col-md-6">
-                                <Meals
-                                    index = {index}
-                                    key = {index.idMeal}
-                                ></Meals>
+                            <div className="col-lg-4 col-md-6 my-3">
+                                <div className="h-100">
+                                    <Meals
+                                        index = {index}
+                                        key = {index.idMeal}
+                                    ></Meals>
+                                </div>
                             </div>
                             )
             }
