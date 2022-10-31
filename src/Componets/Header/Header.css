@@ -1,6 +1,6 @@
 
 .header-div{
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, blue, #007ACC, #6da9d1 );
     padding: 15px 0;
     width: 70%;
     margin: 30px auto;
