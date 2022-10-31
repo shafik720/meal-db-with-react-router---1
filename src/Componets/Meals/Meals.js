@@ -4,8 +4,9 @@ import './Meals.css'
 const Meals = (props) => {
     let {idMeal, strArea, strCategory, strMeal, strMealThumb} = props.index ;
     return (
-        <div>
-            <h2>Name : {strMeal}</h2>
+        <div className="meal-card">
+            <img src={strMealThumb} alt=""/>
+            <h3>Name : {strMeal}</h3>
         </div>
     );
 };

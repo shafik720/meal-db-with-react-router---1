@@ -36,12 +36,24 @@ const Food = () => {
             </div>
             <div className="result-div">
             <h2>Total Food Found : {meal.length} </h2>
-                {                   
-                   meal.map(index=><Meals
-                    index = {index}
-                    key = {index.idMeal}
-                   ></Meals>)
-                }
+            <div className="container">
+            <div className="row">
+            {                   
+                            meal.map(index=>
+                            <div className="col-lg-4 col-md-6">
+                                <Meals
+                                    index = {index}
+                                    key = {index.idMeal}
+                                ></Meals>
+                            </div>                            
+                            
+                            )
+            }
+                
+            </div>
+            </div>
+
+                
             </div>
         </div>
     );
