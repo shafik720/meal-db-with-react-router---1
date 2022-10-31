@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import Meals from '../Meals/Meals';
 import './Food.css'
 
 const Food = () => {
@@ -34,8 +35,9 @@ const Food = () => {
                 <Button variant="warning" className="btn-lg">Search</Button>
             </div>
             <div className="result-div">
-                {
-                   <h2>Total Food Found : {meal.length} </h2>
+            <h2>Total Food Found : {meal.length} </h2>
+                {                   
+                   meal.map(index=><Meals></Meals>)
                 }
             </div>
         </div>
