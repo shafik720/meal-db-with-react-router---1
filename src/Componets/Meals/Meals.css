@@ -6,6 +6,7 @@
     border: 3px solid blue;
     border-radius: 5px;
     padding: 10px;
+    cursor: pointer;
 }
 .meal-card img{
     width: 100%;
