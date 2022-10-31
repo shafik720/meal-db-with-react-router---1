@@ -14,3 +14,6 @@
     font-size: 25px;
     font-weight: 600;
 }
+.header-div a:hover{
+    color: darkred;
+}
