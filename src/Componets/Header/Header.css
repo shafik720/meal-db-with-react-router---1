@@ -2,9 +2,15 @@
 .header-div{
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
     padding: 15px 0;
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 5px;
 }
 
 .header-div a{
     color: white;
     text-decoration: none;
+    margin: 0 30px;
+    font-size: 25px;
+    font-weight: 600;
 }
