@@ -1,0 +1,9 @@
+
+
+.search-div{
+    display: flex;
+    margin: auto;
+}
+.search-div button{
+    margin: 0 20px;
+}
