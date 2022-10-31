@@ -15,15 +15,14 @@ const Food = () => {
         fetch(url)
         .then(res=>res.json())
         .then(data=>{
-            if(!data.meals){
-                console.log('try again');
+            if(!data.meals){                
+                setMeal([]);
             }else{
-                console.log(data.meals);
                 setMeal(data.meals);
             }
         })
         
-    },[food])
+    },[food]);
     return (
         <div>
             <div className="search-div col-lg-6">
@@ -37,16 +36,15 @@ const Food = () => {
             <div className="result-div">
             <h2>Total Food Found : {meal.length} </h2>
             <div className="container">
-            <div className="row">
-            {                   
+            <div className="row">                
+            {               
                             meal.map(index=>
                             <div className="col-lg-4 col-md-6">
                                 <Meals
                                     index = {index}
                                     key = {index.idMeal}
                                 ></Meals>
-                            </div>                            
-                            
+                            </div>
                             )
             }
                 

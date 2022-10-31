@@ -3,6 +3,7 @@ import './Meals.css'
 
 const Meals = (props) => {
     let {idMeal, strArea, strCategory, strMeal, strMealThumb} = props.index ;
+    console.log(props.index)
     return (
         <div className="meal-card">
             <img src={strMealThumb} alt=""/>
