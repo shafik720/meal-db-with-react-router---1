@@ -6,6 +6,7 @@ import Food from './Componets/Food/Food';
 import About from './Componets/About/About';
 import Contact from './Componets/Contact/Contact';
 import Error from './Componets/Error/Error'
+import SingleMeal from './Componets/SingleMeal/SingleMeal';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/food' element={<Food></Food>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
+        <Route path="/food/:details" element={<SingleMeal></SingleMeal>}></Route>
         <Route path="*" element={<Error></Error>}></Route>
       </Routes>
     </div>
